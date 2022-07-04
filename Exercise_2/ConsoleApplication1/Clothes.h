@@ -1,5 +1,5 @@
 #pragma once
-class Clothes{
+class Clothes {
 protected:
 	char* color;
 	char* size;
@@ -25,6 +25,6 @@ public:
 
 	Clothes& operator = (const Clothes& other);
 
-	~Clothes();
+	virtual ~Clothes();
 };
 

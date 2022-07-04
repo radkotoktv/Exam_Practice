@@ -23,7 +23,7 @@ private:
 
 public:
 	Briefcase();
-	Briefcase(const char* color, const char* name, const char* address, const long long int number);
+	Briefcase(const char* briefcaseColor, const char* briefcaseName, const char* address, const long long int number);
 	Briefcase(const Briefcase& other);
 	
 	void copy(const Briefcase& other);
@@ -41,10 +41,7 @@ public:
 	Briefcase& operator = (const Briefcase& other);
 
 	void addClothes(const Clothes& clothesToAdd);
-	//void addSuit(const Suit& suitToAdd);
-	//void addDress(const Dress& dressToAdd);
-	//void addPants(const Pants& pantsToAdd);
 
-	~Briefcase();
+	virtual ~Briefcase();
 };
 

@@ -38,9 +38,9 @@ void Clothes::copy(const Clothes& other) {
 	this->setPrice(other.price);
 }
 void Clothes::printInfo() {
-	std::cout << "Color: " << this->color << std::endl;
-	std::cout << "Size: " << this->size << std::endl;
-	std::cout << "Price: $" << this->price << std::endl;
+	std::cout << "Color: " << this->getColor() << std::endl;
+	std::cout << "Size: " << this->getSize() << std::endl;
+	std::cout << "Price: $" << this->getPrice() << std::endl;
 }
 void Clothes::setColor(const char* color) {
 	copyString(this->color, color);

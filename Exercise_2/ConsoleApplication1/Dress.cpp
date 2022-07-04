@@ -9,7 +9,7 @@ Dress::Dress(const char* color, const char* size, const double price, const doub
 void Dress::printInfo() {
 	std::cout << "Dress:" << std::endl;
 	Clothes::printInfo();
-	std::cout << "Length: " << this->lengthDress << "cm" << std::endl;
+	std::cout << "Length: " << this->getLength() << "cm" << std::endl;
 }
 void Dress::setLength(const double lengthDress) {
 	this->lengthDress = lengthDress;

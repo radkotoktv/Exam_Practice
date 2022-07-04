@@ -35,7 +35,7 @@ Briefcase::Briefcase() {
 	this->size = 0;
 
 }
-Briefcase::Briefcase(const char* color, const char* name, const char* address, const long long int number) {
+Briefcase::Briefcase(const char* briefcaseColor, const char* briefcaseName, const char* address, const long long int number) {
 	this->setColor(color);
 	this->setName(name);
 	this->setAddress(address);
@@ -113,24 +113,6 @@ void Briefcase::addClothes(const Clothes& clothesToAdd) {
 	}
 	this->clothes[this->size++] = clothesToAdd;
 }
-//void Briefcase::addSuit(const Suit& suitToAdd) {
-//	if (this->size == this->capacity) {
-//		this->resize();
-//	}
-//	this->clothes[this->size++] = suitToAdd;
-//}
-//void Briefcase::addDress(const Dress& dressToAdd) {
-//	if (this->size == this->capacity) {
-//		this->resize();
-//	}
-//	this->clothes[this->size++] = dressToAdd;
-//}
-//void Briefcase::addPants(const Pants& pantsToAdd) {
-//	if (this->size == this->capacity) {
-//		this->resize();
-//	}
-//	this->clothes[this->size++] = pantsToAdd;
-//}
 Briefcase::~Briefcase() {
 	this->deallocate();
 }
